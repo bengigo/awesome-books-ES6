@@ -45,6 +45,8 @@ nav {
 #display-section {
   margin-top: 50px;
   flex-direction: column;
+  height: 65vh;
+  overflow: scroll;
 }
 
 #book-list {
@@ -137,7 +139,7 @@ button {
   border: 2px solid black;
 }
 
-.alert {
+#alert {
   background-color: rgb(218, 218, 218);
   margin: 10px;
   padding-left: 8px;
