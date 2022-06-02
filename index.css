@@ -42,9 +42,16 @@
     font-size: 14px;
   }
   
-  #list-page {
+  #display-section {
     margin-top: 50px;
+    background-color: pink;
+    flex-direction: column;
   }
+
+  /* create a rule for hiding display section
+  #dipslay-section.hide {
+    display: none;
+  } */
   
   #book-list {
     display: flex;
@@ -73,6 +80,10 @@
     display: none;
     margin-top: 40px;
   }
+
+  /* #add-page.hide {
+    display: none;
+  } */
   
   h2 {
     font-size: 26px;
@@ -86,6 +97,10 @@
     justify-content: center;
     align-items: center;
   }
+
+  /* #contact-page.hide {
+    display: none;
+  } */
   
   .contact-intro {
     font-size: 16px;
