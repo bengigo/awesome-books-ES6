@@ -72,7 +72,7 @@ nav {
   justify-content: space-between;
 }
 
-#book-list .book:nth-child(odd) {
+#display-section .book:nth-child(odd) {
   background: rgb(218, 218, 218);
 }
 
@@ -111,10 +111,7 @@ h2 {
   font-size: 16px;
 }
 
-.bg {
-  opacity: 0;
-  display: none;
-}
+
 
 .delete {
   font-size: 20px;
@@ -180,7 +177,7 @@ button {
 
 footer {
   position: fixed;
-  width: 100%;
+  width: 97%;
   bottom: 10px;
   border: 4px solid black;
   border-radius: 3px;
