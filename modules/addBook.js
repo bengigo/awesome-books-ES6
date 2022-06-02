@@ -9,7 +9,7 @@ export default function addBook() {
 
   addButton.addEventListener('click', (event) => {
     event.preventDefault();
-    //if the input fields are empty, there should be an error msg
+    // if the input fields are empty, there should be an error msg
 
     // if (Title === '' || Author === '') {
     //   document.querySelector('.alert').innerHTML = 'Please add a title and an author';
@@ -17,17 +17,15 @@ export default function addBook() {
     //   document.querySelector('.alert').innerHTML = '';
     // }
 
-    if(bookTitle.value === '' || authorName.value === '') {
-      errorMessage.innerHTML = 'Please fill in all fields.'
+    if (bookTitle.value === '' || authorName.value === '') {
+      errorMessage.innerHTML = 'Please fill in all fields.';
     } else {
       Book.storeBooks();
 
       bookTitle.value = '';
       authorName.value = '';
-  
+
       window.location.reload();
     }
-
-   
   });
 }
