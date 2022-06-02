@@ -1,8 +1,8 @@
-const bookTitle = document.querySelector('#title');
-const authorName = document.querySelector('#author');
-const addButton = document.querySelector('#add-button');
+// const bookTitle = document.querySelector('#title');
+// const authorName = document.querySelector('#author');
+// const addButton = document.querySelector('#add-button');
 
-class Book {
+export default class Book {
   constructor(title, author) {
     this.title = title;
     this.author = author;
@@ -37,6 +37,8 @@ class Book {
 
     static storeBooks() {
       let awesomeBooks = [];
+      const bookTitle = document.querySelector('#title');
+      const authorName = document.querySelector('#author');
       if (bookTitle.value !== '' && authorName.value !== '') {
         const book = new Book(bookTitle.value, authorName.value);
 
