@@ -1,7 +1,12 @@
-//import book methods
-import Book from './modules/bookMethods.js';
+// import book methods
+import Book from './bookMethods.js';
 
-addButton.addEventListener('click', (event) => {
+export default function addBook() {
+  const addButton = document.querySelector('#add-button');
+  const bookTitle = document.querySelector('#title');
+  const authorName = document.querySelector('#author');
+
+  addButton.addEventListener('click', (event) => {
     event.preventDefault();
     //
 
@@ -11,4 +16,5 @@ addButton.addEventListener('click', (event) => {
     authorName.value = '';
 
     window.location.reload();
-});
+  });
+}
