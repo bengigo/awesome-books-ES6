@@ -16,6 +16,9 @@ import displayForm from './modules/formPage.js';
 // import contact page
 import displayContact from './modules/contactPage.js'
 
+// import from luxon
+import { DateTime } from './modules/luxon.js';
+
 
 const bookTitle = document.querySelector('#title');
 const authorName = document.querySelector('#author');
@@ -33,8 +36,12 @@ Book.storeBooks();
 // add book
 addBook();
 
-// (page management) navigation
+// show date-time
+const now = DateTime.now();
+const time = document.querySelector('#date-time');
+time.innerHTML = now.toLocaleString(DateTime.DATETIME_MED);
 
+// (page management) navigation
 displayList();
 
 displayForm();
