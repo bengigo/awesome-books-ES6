@@ -1,6 +1,5 @@
 // WHERE WILL TIME STUFF GO?
 
-
 // import book methods
 import Book from './modules/bookMethods.js';
 
@@ -14,11 +13,10 @@ import displayList from './modules/listPage.js';
 import displayForm from './modules/formPage.js';
 
 // import contact page
-import displayContact from './modules/contactPage.js'
+import displayContact from './modules/contactPage.js';
 
 // import from luxon
 import { DateTime } from './modules/luxon.js';
-
 
 // const bookTitle = document.querySelector('#title');
 // const authorName = document.querySelector('#author');
@@ -47,5 +45,3 @@ displayList();
 displayForm();
 
 displayContact();
-
-
