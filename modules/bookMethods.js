@@ -17,7 +17,7 @@ export default class Book {
       displayContainer.innerHTML += `
                             <div class="book">
                               <p>"${book.title}" by ${book.author}</p>
-                              <button class="delete" id="${book.id}">Delete</button>
+                              <button class="delete button" id="${book.id}">Delete</button>
                             </div>
                             `;
     });

@@ -44,14 +44,8 @@ nav {
 
 #display-section {
   margin-top: 50px;
-  background-color: pink;
   flex-direction: column;
 }
-
-/* create a rule for hiding display section
-  #dipslay-section.hide {
-    display: none;
-  } */
 
 #book-list {
   display: flex;
@@ -79,12 +73,9 @@ nav {
 #add-page {
   display: none;
   margin-top: 40px;
-  background-color: pink;
+  flex-direction: column;
+  align-items: center;
 }
-
-/* #add-page.hide {
-    display: none;
-  } */
 
 h2 {
   font-size: 26px;
@@ -99,10 +90,6 @@ h2 {
   align-items: center;
 }
 
-/* #contact-page.hide {
-    display: none;
-  } */
-
 .contact-intro {
   font-size: 16px;
 }
@@ -110,8 +97,6 @@ h2 {
 .contact-info {
   font-size: 16px;
 }
-
-
 
 .delete {
   font-size: 20px;
@@ -128,7 +113,7 @@ h1 {
   justify-content: center;
 }
 
-.form {
+form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -141,27 +126,11 @@ input {
   margin-bottom: 10px;
 }
 
-.info {
-  padding: 0 5px;
-}
-
-.inputs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-hr {
-  margin: 20px auto;
-  width: 150px;
-  border: 1px solid black;
-}
-
 button {
   background-color: white;
 }
 
-.btn {
+.button {
   -webkit-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.75);
@@ -187,3 +156,6 @@ footer {
   font-size: 16px;
   margin-left: 25px;
 }
+
+
+/* need scroll */
